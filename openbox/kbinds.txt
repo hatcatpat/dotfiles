@@ -1,0 +1,101 @@
+o W-1             	GoToDesktop
+o W-f             	ToggleFullscreen
+o W-c             	Move
+o W-2             	GoToDesktop
+o W-3             	GoToDesktop
+o W-4             	GoToDesktop
+o W-5             	GoToDesktop
+o W-6             	GoToDesktop
+o W-7             	GoToDesktop
+o W-8             	GoToDesktop
+o W-9             	GoToDesktop
+o W-0             	GoToDesktop
+o C-W-1           	SendToDesktop
+o C-W-2           	SendToDesktop
+o C-W-3           	SendToDesktop
+o C-W-4           	SendToDesktop
+o C-W-5           	SendToDesktop
+o C-W-6           	SendToDesktop
+o C-W-7           	SendToDesktop
+o C-W-8           	SendToDesktop
+o C-W-9           	SendToDesktop
+o C-W-0           	SendToDesktop
+o A-Tab           	NextWindow
+o W-Tab           	NextWindow
+o W-x             	DesktopNext
+o W-z             	DesktopPrevious
+o W-Left          	UnmaximizeFull
+o W-Right         	UnmaximizeFull
+o C-W-f           	MaximizeFull
+o W-S-F           	UnmaximizeFull
+o W-S-k           	Unmaximize
+o W-S-j           	Unmaximize
+o W-k             	Unmaximize
+o W-h             	Unmaximize
+o W-j             	Unmaximize
+o W-l             	Unmaximize
+o W-Right         	MoveRelative
+o W-Left          	MoveRelative
+o W-Up            	MoveRelative
+o W-Down          	MoveRelative
+o W-r             	Resize
+o S-W-Left        	SendToDesktopLeft
+o S-W-Right       	SendToDesktopRight
+o S-W-Up          	SendToDesktopUp
+o S-W-Down        	SendToDesktopDown
+o A-Escape        	Lower
+x XF86AudioStop   	playerctl stop
+x XF86AudioPlay   	playerctl play-pause
+x XF86AudioPrev   	playerctl previous
+x XF86AudioNext   	playerctl next
+x Print           	scrot 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; xviewer $$(xdg-user-dir PICTURES)/$f'
+x A-Print         	scrot -d 5 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; xviewer $$(xdg-user-dir PICTURES)/$f'
+x A-F2            	xfce4-popup-whiskermenu
+x W-n             	exo-open --launch FileManager
+x W-t             	exo-open --launch TerminalEmulator
+x W-w             	exo-open --launch WebBrowser
+x W-e             	xed
+x C-A-m           	xfce4-settings-manager
+x W-m             	termite -e htop
+x W-v             	pavucontrol
+x W-s             	skippy-xd
+x W-Return        	exo-open --launch TerminalEmulator
+x C-Escape        	lockscreen
+o W-S-Escape      	Exit
+o C-S-BackSpace   	Restart
+o C-S-Return      	Reconfigure
+x W-Escape        	xkill
+x S-A-F1          	rofi -show ssh
+x A-F1            	rofi -show drun
+o A-F4            	Close
+o A-F5            	Iconify
+o A-F6            	ToggleMaximize
+o A-F8            	ToggleDecorations
+o W-d             	ToggleShowDesktop
+o W-b             	ToggleDecorations
+o W-space         	ToggleAlwaysOnTop
+o A-r             	Resize
+o A-m             	Move
+o W-q             	Close
+o A-space         	client-menu
+o W-KP_1          	UnmaximizeFull
+o W-KP_2          	UnmaximizeFull
+o W-KP_3          	UnmaximizeFull
+o W-KP_4          	UnmaximizeFull
+o W-KP_5          	MaximizeFull
+o W-KP_6          	UnmaximizeFull
+o W-KP_7          	UnmaximizeFull
+o W-KP_8          	UnmaximizeFull
+o W-KP_9          	UnmaximizeFull
+o W-Right         	UnmaximizeFull
+o W-Home          	UnmaximizeFull
+o W-End           	UnmaximizeFull
+o W-Insert        	UnmaximizeFull
+o W-Delete        	UnmaximizeFull
+o W-Left          	UnmaximizeFull
+o W-Up            	UnmaximizeFull
+o W-Down          	UnmaximizeFull
+o W-Page_Up       	MaximizeFull
+o W-Page_Down     	UnmaximizeFull
+o W-A-Left        	UnmaximizeFull
+o W-A-Right       	UnmaximizeFull

@@ -1,0 +1,115 @@
+/**
+ * User: qball
+ * Copyright: Dave Davenport
+ */
+* {
+    text-color:  #212121;
+    background-color:  rgba(238,238,238,0.2);
+    dark: #5c514a;
+    // Black
+    black:       #3d352a;
+    lightblack:  #554444;
+    //
+    // Red
+    red:         #cd5c5c;
+    lightred:    #cc5533;
+    //
+    // Green
+    green:       #86af80;
+    lightgreen:  #88cc22;
+    //
+    // Yellow
+    yellow:      #e8ae5b;
+    lightyellow:     #ffa75d;
+    //
+    // Blue
+    blue:      #6495ed;
+    lightblue:     #87ceeb;
+    //
+    // Magenta
+    magenta:      #deb887;
+    lightmagenta:     #996600;
+    //
+    // Cyan
+    cyan:      #b0c4de;
+    lightcyan:     #b0c4de;
+    //
+    // White
+    white:      #bbaa99;
+    lightwhite:     #ddccbb;
+    //
+    // Bold, Italic, Underline
+    highlight:     bold italic #338DD6;
+}
+#window {
+    height:   20%;
+    width: 20em;
+    location: northeast;
+    anchor:   northeast;
+    border:  0px 0px 0px 0px;
+    text-color: #ffffff;
+    background-color: #5C514A;
+}
+
+#mode-switcher {
+    border: 0px 0px 0px 0px;
+    background-color: #5C514A;
+    padding: 4px;
+}
+#button selected {
+    border-color: #5C514A;
+    text-color: @lightgreen;
+}
+#inputbar {
+    background-color: #5C514A;
+    text-color: #212121;
+    text-background: #eeeeee;
+    padding: 4px;
+    border: 0px 0px 2px 0px;
+}
+#entry {
+    text-color: #fbf1c7;
+    background-color: #5C514A;
+}
+#prompt {
+    background-color: #5C514A;
+}
+#case-indicator {
+    background-color: #5C514A;
+}
+#mainbox {
+    expand: true;
+    background-color: #5C514A;
+    spacing: 1em;
+}
+#listview {
+    padding: 0em 1em 0em 1em;
+    dynamic: false;
+    lines: 0;
+}
+#element selected  normal {
+    background-color: #5C514A;
+    text-color: #FFFFFF;
+}
+#element normal active {
+    text-color: #5c514a;
+}
+#element normal urgent {
+    text-color: @lightred;
+}
+#element alternate normal {
+}
+#element alternate active {
+    text-color: @lightblue;
+}
+#element alternate urgent {
+    text-color: @lightred;
+}
+#element selected active {
+    background-color: @lightblue;
+    text-color: @dark;
+}
+#element selected urgent {
+    background-color: @lightred;
+    text-color: @dark;
+}

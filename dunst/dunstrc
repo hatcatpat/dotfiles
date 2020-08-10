@@ -1,0 +1,51 @@
+[global]
+    font = Roboto Condensed Bold 10
+    markup = yes
+    format = "%s\n%b"
+    sort = yes
+    indicate_hidden = yes
+    alignment = center
+    bounce_freq = 0
+    show_age_threshold = 60
+    word_wrap = yes
+    ignore_newline = no
+    geometry = "400x10-20+20"
+    shrink = yes
+    transparency = 0
+    idle_threshold = 0
+    monitor = 0
+    follow = mouse
+    sticky_history = yes
+    history_length = 20
+    show_indicators = no
+    line_height = 0
+    separator_height = 1
+    padding = 10
+    horizontal_padding = 10
+    frame_color = "#16A085"
+    separator_color = "#F7F7F7"
+    frame_width = 0
+    startup_notification = false
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/chromium
+
+[shortcuts]
+
+
+[urgency_low]
+    background = "#F7F7F7"
+    foreground = "#1B1D24"
+    frame_color = "#1B1D24"
+    timeout = 3
+
+[urgency_normal]
+    background = "#F7F7F7"
+    foreground = "#1B1D24"
+    frame_color = "#1B1D24"
+    timeout = 3
+
+[urgency_critical]
+    background = "#F7F7F7"
+    foreground = "#1B1D24"
+    frame_color = "#1B1D24"
+    timeout = 3

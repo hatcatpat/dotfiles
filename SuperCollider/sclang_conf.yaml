@@ -1,0 +1,8 @@
+includePaths:
+    -   /home/pat/.local/share/SuperCollider/downloaded-quarks/BatLib
+    -   /home/pat/.local/share/SuperCollider/downloaded-quarks/Bjorklund
+    -   /home/pat/.local/share/SuperCollider/downloaded-quarks/ddwSnippets
+    -   /home/pat/.local/share/SuperCollider/Extensions
+excludePaths:
+    []
+postInlineWarnings: false

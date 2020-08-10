@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu>
+
+<menu id="preferences" label="4 settings">
+	<separator label="settings"/>
+	<menu id="openbox-config" label="openbox">
+		<separator label="openbox"/>
+		<item label="menu editor">
+			<action name="Execute">
+				<command>kickshaw</command>
+			</action>
+		</item>
+		<item label="keybinds">
+			<action name="Execute">
+				<command>obkey</command>
+			</action>
+		</item>
+		<item label="reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item label="restart">
+			<action name="Restart"/>
+		</item>
+	</menu>
+	<menu id="mouse-config" label="touchpad">
+		<separator label="touchpad"/>
+		<item label="touchpad on">
+			<action name="Execute">
+				<command>./.local/share/scripts/toggle-touchpad.sh on</command>
+			</action>
+		</item>
+		<item label="touchpad off">
+			<action name="Execute">
+				<command>./.local/share/scripts/toggle-touchpad.sh off</command>
+			</action>
+		</item>
+	</menu>
+	<menu id="appearance-config" label="appearance">
+		<separator label="appearance"/>
+		<item label="lxappearance">
+			<action name="Execute">
+				<command>lxappearance</command>
+			</action>
+		</item>
+		<item label="xfce">
+			<action name="Execute">
+				<command>xfce4-appearance-settings</command>
+			</action>
+		</item>
+		<item label="openbox">
+			<action name="Execute">
+				<command>obconf</command>
+			</action>
+		</item>
+	</menu>
+	<menu id="TintPipeMenu" label="tint2" execute="manjaro-tint2-pipemenu"/>
+	<menu id="system-settings" label="system">
+		<separator label="system"/>
+		<item label="pavucontrol">
+			<action name="Execute">
+				<command>pavucontrol</command>
+			</action>
+		</item>
+		<item label="pamac">
+			<action name="Execute">
+				<command>pamac-manager</command>
+			</action>
+		</item>
+		<item label="settings manager">
+			<action name="Execute">
+				<command>xfce4-settings-manager</command>
+			</action>
+		</item>
+	</menu>
+	<item label="variety">
+		<action name="Execute">
+			<command>variety</command>
+		</action>
+	</item>
+	<menu id="wifi-menu" label="wifi" execute="python Documents/Python/OpenboxMenu/openbox_wifi_menu.py"/>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+	<separator label="hello"/>
+	<menu id="status" label="1 status" execute="python ~/Documents/Python/OpenboxMenu/openbox_status_menu.py"/>
+	<item label="2 applications">
+		<action name="Execute">
+			<command>rofi -show drun</command>
+		</action>
+	</item>
+	<item label="3 windows">
+		<action name="Execute">
+			<command>./.local/share/scripts/rofiWindow.sh</command>
+		</action>
+	</item>
+	<menu id="preferences"/>
+	<item label="5 exit">
+		<action name="Execute">
+			<command>rofr.sh -l</command>
+		</action>
+	</item>
+</menu>
+
+</openbox_menu>

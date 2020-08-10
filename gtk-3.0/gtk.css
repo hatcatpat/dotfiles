@@ -1,0 +1,21 @@
+decoration {
+border-width: 0.4px;
+border-color: #808080;
+border-style: solid;
+}
+
+notebook tab {
+  min-height: 0;
+  padding: 2px;
+}
+
+notebook tab button {
+  min-height: 0;
+  min-width: 0;
+  padding: 1px;
+  margin: 1px;
+}
+
+VteTerminal, vte-terminal {
+    padding: 16px;
+}

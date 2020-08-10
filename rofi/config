@@ -1,0 +1,17 @@
+rofi.theme: sidebar.rasi
+
+rofi.font: Roboto Condensed 12
+rofi.terminal: terminator
+
+rofi.columns:4
+
+rofi.display-drun:
+rofi.display-run:
+rofi.display-system:
+rofi.display-ssh:
+rofi.display-window:
+
+rofi.modi: run,drun,window
+
+rofi.show-icons: false
+
