@@ -1,0 +1,1 @@
+cd ~/Documents/Processing/JS/p5js && npm run electron $1 $2
