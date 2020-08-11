@@ -13,6 +13,8 @@ Plug 'sophacles/vim-processing'
 Plug 'rakr/vim-one'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'tikhomirov/vim-glsl'
+Plug 'Yggdroot/indentLine'
+Plug 'prettier/vim-prettier'
 call plug#end()
 
 set termguicolors
@@ -35,6 +37,19 @@ autocmd FileType python nnoremap <silent> <C-b> :!python main.py<CR>
     ":w
     ":exec "!python ~/.local/share/scripts/send_osc.py --port 1234 --addr /reload"
 "endfunction
+
+let g:indentLine_char='│'
+
+let g:prettier#config#tab_width = 2
+let g:prettier#config#use_tabs = 'false'
+
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\   'html': ['prettier'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--semi false'
 
 nnoremap <Space> :noh<CR>
 nnoremap <C-b> :make<CR>
