@@ -5,5 +5,4 @@ NOTI_ID=$(dunstify "desktop $DESKTOP" "" \
 			 -r 3 \
 			 -t 1000)
 
-paplay ~/.local/share/scripts/sound.ogg --volume=32768
-
+#paplay ~/.local/share/scripts/sound.ogg --volume=32768

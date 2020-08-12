@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>80</strength>
@@ -24,14 +23,14 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Roboto</name>
-      <size>10</size>
+      <name>Roboto Condensed,</name>
+      <size>12</size>
       <weight>Bold</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Roboto</name>
-      <size>10</size>
+      <name>Roboto Condensed,</name>
+      <size>12</size>
       <weight>Bold</weight>
       <slant>Italic</slant>
     </font>
@@ -43,19 +42,19 @@
     </font>
     <font place="MenuItem">
       <name>Roboto Condensed,</name>
-      <size>10</size>
+      <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Roboto Condensed,</name>
-      <size>10</size>
+      <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Roboto Condensed,</name>
-      <size>10</size>
+      <size>12</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
@@ -300,9 +299,6 @@
       <action name="Execute">
         <command>./.local/share/scripts/rofiWindow.sh</command>
       </action>
-      <action name="Execute">
-        <command>paplay ~/.local/share/scripts/sound.ogg --volume=37268</command>
-      </action>
     </keybind>
     <keybind key="W-x">
       <action name="DesktopNext"/>
@@ -475,7 +471,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>terminator -e "nvim"</command>
+        <command>terminator -e &quot;nvim&quot;</command>
       </action>
     </keybind>
     <keybind key="C-A-m">
@@ -494,17 +490,11 @@
       </action>
     </keybind>
     <keybind key="W-s">
-      <action name="Execute">
-        <command>paplay ~/.local/share/scripts/sound.ogg --volume=37268</command>
-      </action>
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
     </keybind>
     <keybind key="W-S-s">
-      <action name="Execute">
-        <command>paplay ~/.local/share/scripts/sound.ogg --volume=37268</command>
-      </action>
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
@@ -536,9 +526,6 @@
     <keybind key="W-space">
       <action name="Execute">
         <command>rofi -show drun</command>
-      </action>
-      <action name="Execute">
-        <command>paplay ~/.local/share/scripts/sound.ogg --volume=37268</command>
       </action>
     </keybind>
     <keybind key="A-F4">
@@ -716,16 +703,16 @@
     <keybind key="W-Down">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <width>80%</width>
-        <height>80%</height>
+        <width>60%</width>
+        <height>60%</height>
       </action>
       <action name="MoveToCenter"/>
     </keybind>
     <keybind key="C-W-Down">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <width>90%</width>
-        <height>90%</height>
+        <width>80%</width>
+        <height>80%</height>
       </action>
       <action name="MoveToCenter"/>
     </keybind>

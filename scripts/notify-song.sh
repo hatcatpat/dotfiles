@@ -10,4 +10,4 @@ if [[ $PLAYING == "Paused" ]]; then
 				 -t 1000)
 fi
 
-paplay ~/.local/share/scripts/sound.ogg --volume=32768
+#paplay ~/.local/share/scripts/sound.ogg --volume=32768

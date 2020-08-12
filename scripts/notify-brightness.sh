@@ -15,4 +15,4 @@ NOTI_ID=$(dunstify "brightness" "$BRIGHTNESS percent" \
 			 -t 1000)
 
 
-paplay ~/.local/share/scripts/sound.ogg --volume=32768
+#paplay ~/.local/share/scripts/sound.ogg --volume=32768

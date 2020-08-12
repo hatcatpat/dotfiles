@@ -10,5 +10,5 @@ NOTI_ID=$(dunstify "capslock" "" \
 			 -r 4 \
 			 -t 1000)
 
-paplay ~/.local/share/scripts/sound.ogg --volume=32768
+#paplay ~/.local/share/scripts/sound.ogg --volume=32768
 
