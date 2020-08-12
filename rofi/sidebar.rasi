@@ -46,7 +46,7 @@
     width: 40em;
     location: center;
     anchor:   center;
-    border:  0px;
+    border:  1px;
     /*border-color: #e0e0e0;*/
     border-color: #222D32;
     text-color: #ffffff;
