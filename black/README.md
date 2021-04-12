@@ -6,5 +6,6 @@
 ## editor: nvim
 ## filebrowser: ranger
 ## colorscheme: grayscale.dark (from terminal.sexy)
+## rofi-thingy: rofi
 
 ![preview](preview.png)
