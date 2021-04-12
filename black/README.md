@@ -1,5 +1,6 @@
 # black
 
+## distro: archlinux
 ## wm: berrywm (slightly modified)
 ## bar: polybar
 ## terminal: termite
