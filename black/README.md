@@ -6,3 +6,5 @@
 ## editor: nvim
 ## filebrowser: ranger
 ## colorscheme: grayscale.dark (from terminal.sexy)
+
+![preview](preview.png)
