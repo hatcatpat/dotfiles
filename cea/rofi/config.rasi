@@ -1,0 +1,7 @@
+configuration {
+	theme: "bnw.rasi";
+	font: "DroidSans\ Mono\ 16";
+	combi-modi: "window,run";
+	terminal: "/usr/bin/kitty";
+	columns: 6;
+}

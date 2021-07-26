@@ -1,0 +1,94 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	kitty
+
+# chromium
+super + i
+	chromium
+
+# program launcher
+super + r
+	rofi -show run
+
+# window switcher
+super + w
+	rofi -show window
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# kill X
+super + shift + Escape
+	pkill -15 Xorg
+
+# screen capture
+super + Print
+	scrot '/tmp/%F_%T_$wx$h.png' -s -f -e 'xclip -selection clipboard -t image/png -i $f'
+
+# open notes
+super + n
+	kitty -e nvim ~/documents/notes.md
+
+# volume
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -2%
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +2%
+
+#
+# berry hotkeys
+#
+
+super + {h, j, k, l}
+    berryc window_move {-30 0, 0 30, 0 -30, 30 0}
+
+super + shift +  {h, j, k, l}
+    berryc window_resize {-30 0, 0 30, 0 -30, 30 0}
+
+super + {1-9}
+    berryc switch_workspace_absolute {0-9}
+
+super + shift + {1-9}
+    berryc send_to_workspace_absolute {0-9}
+
+super + m
+    berryc window_monocle
+
+super + f
+    berryc fullscreen
+
+super +  p
+    berryc snap_right
+
+super + o
+    berryc snap_left
+
+super + d
+    berryc toggle_decorations
+
+super + Tab
+    berryc cycle_focus
+
+super + q
+    berryc window_close
+
+super + c
+    berryc window_center
+
+super + {z,x}
+    berryc switch_workspace {-1,1}
+
+super + shift + {z,x}
+    berryc send_to_workspace {-1,1}
+
+~button1
+    berryc pointer_focus
