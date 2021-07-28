@@ -7,13 +7,13 @@ berryc top_gap            30
 berryc move_step	  30
 berryc resize_step	  30
 
-berryc inner_focus_color   ffffff
-berryc inner_unfocus_color ffffff
+berryc inner_focus_color   000000
+berryc inner_unfocus_color 000000
 berryc focus_color         000000
 berryc unfocus_color       000000
 
-berryc text_focus_color    000000
-berryc text_unfocus_color  000000
+berryc text_focus_color    ffffff
+berryc text_unfocus_color  ffffff
 
 berryc smart_place "true"
 berryc draw_text   "true"
@@ -25,4 +25,20 @@ do
 	berryc name_desktop $i $(expr $i + 1)
 done
 
-xsetroot -solid gray
+col_id=$(expr $RANDOM % 11)
+col=gray
+case $col_id in
+  0) col=gray ;;
+  1) col=dimgray ;;
+  2) col=gainsboro ;;
+  3) col=lightskyblue ;;
+  4) col=lightslategray ;;
+  5) col=lightsteelblue;;
+  6) col=pink ;;
+  7) col=salmon ;;
+  8) col=tomato ;;
+  9) col=palevioletred ;;
+  10) col=turquoise ;;
+  11) col=thistle ;;
+esac
+xsetroot -solid $col

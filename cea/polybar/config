@@ -25,6 +25,7 @@ background = #fff
 foreground = #000
 
 font-0 = "DroidSans Mono:pixelsize=12; 2"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
 
 modules-left = ws
 modules-right = k light pa net bat date
@@ -89,10 +90,10 @@ label-active-background = #000
 label-urgent-foreground = #fff
 label-urgent-background = #000
 
-label-active = ! %name%
-label-urgent = ! %name%
-label-occupied = + %name%
-label-empty = - %name%
+label-active = x
+label-urgent = !
+label-occupied = o
+label-empty = o
 
 label-active-padding = 1
 label-urgent-padding = 1
